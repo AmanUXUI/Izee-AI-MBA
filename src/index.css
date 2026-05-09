@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import url('https://api.fontshare.com/v2/css?f[]=amulya@700&f[]=synonym@400,500,700&display=swap');
+
+@theme {
+  --font-sans: "Synonym", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Amulya", sans-serif;
+
+  --color-brand-blue: #1e3a8a;
+  --color-brand-gold: #d4af37;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-white text-slate-900 antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold tracking-tight;
+  }
+}
